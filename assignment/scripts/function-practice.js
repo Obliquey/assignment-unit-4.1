@@ -68,8 +68,16 @@ console.log(`Using getLast on array; should be 6: ${getLast(arr)}`);
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
-  
+  for (let i = 0; i < array.length; i++){
+    if (value == array[i]){
+      return true;
+    }
+  }
+  return false;
 }
+
+console.log(`Using find function to test for loop, should return true: ${find(6, arr)}` );
+
 
 // ----------------------
 // Stretch Goals
