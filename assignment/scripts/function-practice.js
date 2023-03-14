@@ -148,3 +148,17 @@ console.log("Checking returnPositive: ", returnPositive([1, 2, 3]));
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+// Create a function that takes a number as an argument, then adds up every number together, until it reaches the given number.
+
+function addUp(num) {
+  let totalSum = 0;
+
+  for (let i = 0; i <= num; i++) {
+    totalSum += i;
+  }
+
+  return totalSum;
+}
+
+console.log("Checking totalSum, should be 15: ", addUp(5));
